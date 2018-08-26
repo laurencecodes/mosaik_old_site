@@ -57,6 +57,19 @@ h1, h2, h3, h4, h5, b {
 
 .medium-text{
   font-size: 1.5rem;
+  color: #000;
+}
+
+.button{
+  padding: 10px 15px;
+  background: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button:hover{
+  background: #c5ccdd;
+  transition: background-color 0.5s ease;
 }
 
 /* Grid */
@@ -158,8 +171,8 @@ body {
 .table {
   display: flex;
   flex-wrap:wrap;
-  color: #666;
   font-size: 0.9375rem;
+  color: #666;
 }
 
 .table h3, .table p {
