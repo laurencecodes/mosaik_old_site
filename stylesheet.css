@@ -38,7 +38,7 @@
 
 html, body {
   /* System Fonts as used by GitHub */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   /* font-size: 19px; */
   line-height: 1.5;
@@ -56,8 +56,11 @@ h1, h2, h3, h4, h5, b {
 }
 
 .medium-text{
-  font-size: 1.5rem;
-  color: #000;
+  font-size: 1.65rem;
+}
+
+.display{
+  font-family: "Stardos Stencil", serif;
 }
 
 .button{
@@ -66,7 +69,6 @@ h1, h2, h3, h4, h5, b {
   border-radius: 5px;
   font-weight: bold;
 }
-
 .button:hover{
   background: #c5ccdd;
   transition: background-color 0.5s ease;
@@ -120,7 +122,6 @@ nav li{
   text-decoration: underline;
 }
 
-
 .hero p{
   margin-top: 0rem;
 }
@@ -128,11 +129,17 @@ nav li{
 .header, .hero {
   background-color: #F4D5D1;
 }
+.hero .medium-text{
+  font-weight: 900;
+}
 .introduction {
   background-color: #fff;
 }
 .our-work {
   background-color: #E1F2F3;
+}
+.our-work .display{
+  color: #2C578F;
 }
 .support {
   background-color: #465B76;
