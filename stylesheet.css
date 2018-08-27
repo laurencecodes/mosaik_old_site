@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, b {
   font-weight: normal;
 }
 
+h1{
+  margin-top: 0;
+}
+
 .large-text{
   font-size: 3rem;
 }
@@ -74,6 +78,18 @@ h1, h2, h3, h4, h5, b {
   transition: background-color 0.5s ease;
 }
 
+.link{
+  color: #2C578F !important;
+  margin-bottom: 2px;
+  font-size: 1rem;
+  font-weight: 900;
+  border-bottom: 2px solid #2C578F;
+}
+.link:hover{
+  border-bottom: 3px solid #2C578F;
+  margin-bottom: 1px;
+}
+
 /* Grid */
 
 .grid-row {
@@ -89,7 +105,7 @@ h1, h2, h3, h4, h5, b {
 }
 
 .grid-row p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Sections */
@@ -104,6 +120,9 @@ h1, h2, h3, h4, h5, b {
 
 .mosaic-education{
   font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+
 }
 
 nav{
@@ -132,19 +151,32 @@ nav li{
 .hero .medium-text{
   font-weight: 900;
 }
-.introduction {
-  background-color: #fff;
+.introduction, .values {
+  background-color: #465B76;
+  color: #fff;
 }
-.our-work {
+.our-work{
   background-color: #E1F2F3;
 }
 .our-work .display{
   color: #2C578F;
 }
+.our-work .link{
+  position: absolute;
+  bottom: 2rem;
+}
 .support {
   background-color: #465B76;
   color: #fff;
 }
+.values .grid-row:first-of-type{
+  padding-bottom: 0;
+}
+
+.values .grid-row:nth-of-type(2){
+  padding-top: 0;
+}
+
 
 img{
   width: 100%;
@@ -198,6 +230,7 @@ body {
 }
 
 .card-holder.text{
+  display: block;
   padding: 2rem 0rem;
 }
 
@@ -284,12 +317,12 @@ body {
 /* Desktop styling */
 @media (min-width: 48rem) {
 
-  nav{
-    width: auto;
+  .header .grid-row{
+    padding: 0;
   }
 
-  .our-work .grid-row{
-    padding: 2rem 0rem;
+  nav{
+    width: auto;
   }
 
   .table {
@@ -301,6 +334,7 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .card-holder.text{
