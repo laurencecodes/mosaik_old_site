@@ -4,7 +4,7 @@
     src: url('fonts/f37ginger-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/f37ginger-bold-webfont.woff') format('woff'),
          url('fonts/f37ginger-bold-webfont.ttf') format('truetype'),
-         url('fonts/f37ginger-bold-webfont.svg#f37_gingerlight') format('svg');
+         url('fonts/f37ginger-bold-webfont.svg#f37_gingerbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -18,8 +18,7 @@
 html, body {
   /* System Fonts as used by GitHub */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-  /* font-size: 19px; */
+  font-size: 16px;
   line-height: 1.5;
   background-color: snow;
   scroll-behavior: smooth;
@@ -35,11 +34,11 @@ h1{
 }
 
 .large-text{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .medium-text{
-  font-size: 1.65rem;
+  font-size: 1.25rem;
 }
 
 .display{
@@ -209,7 +208,7 @@ body {
 .table {
   display: flex;
   flex-wrap:wrap;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: #666;
 }
 
@@ -309,12 +308,21 @@ body {
 }
 
 .footer p.subfooter {
-  font-size: 0.935rem;
+  font-size: 1rem;
   opacity: 0.7;
 }
 
 /* Desktop styling */
 @media (min-width: 48rem) {
+
+  .large-text{
+    font-size: 3.5rem;
+  }
+
+  .medium-text{
+    font-size: 1.5rem;
+  }
+
 
   .header .grid-row{
     padding: 0;
