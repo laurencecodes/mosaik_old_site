@@ -23,7 +23,6 @@ html, body {
   line-height: 1.5;
   background-color: snow;
   scroll-behavior: smooth;
-  color: #444;
 }
 
 h1, h2, h3, h4, h5, b {
@@ -84,6 +83,11 @@ h1{
   opacity: 0.8;
 }
 
+.grid-row .column-one-fifth {
+  width: 32%;
+  display: inline-flex;
+}
+
 .grid-row p {
   margin-bottom: 1rem;
 }
@@ -100,9 +104,15 @@ h1{
 
 .Agora-education{
   font-weight: bold;
+  font-family: "Ginger";
   font-size: 1.5rem;
   margin-top: 1.5rem;
 
+}
+
+.visually-hidden{
+  visibility: hidden;
+  font-size: 0;
 }
 
 nav{
@@ -131,6 +141,15 @@ nav li{
 .hero .medium-text{
   /* font-weight: 900; */
 }
+
+.partners{
+  background-color: #faeeec;
+}
+
+.partners .grid-row{
+  padding: 1rem 0;
+}
+
 .introduction, .values {
   background-color: #465B76;
   color: #fff;
@@ -343,6 +362,10 @@ body {
 
   .grid-row .column-two-thirds {
     max-width: 66.66%;
+  }
+
+  .grid-row .column-one-fifth {
+    max-width: 20%;
   }
 
 }
