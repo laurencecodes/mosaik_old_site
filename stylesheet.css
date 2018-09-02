@@ -150,11 +150,11 @@ nav li{
 }
 
 .introduction, .values {
-  background-color: #465B76;
-  color: #fff;
+  /* background-color: #465B76; */
+  /* color: #fff; */
 }
 .our-work{
-  background-color: #E1F2F3;
+  background-color: #465B76;
 }
 .our-work .display{
   color: #2C578F;
@@ -209,7 +209,6 @@ body {
   display: flex;
   flex-wrap:wrap;
   font-size: 1rem;
-  color: #666;
 }
 
 .table h3, .table p {
@@ -298,7 +297,8 @@ body {
 
 
 .footer {
-  background-color: white;
+  background-color: #000;
+  color: #fff;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -358,6 +358,10 @@ body {
     max-width: 64rem;
     display: flex;
     justify-content: space-between;
+  }
+
+  .grid-row .column-one-whole{
+    width: 100%;
   }
 
   .grid-row .column-one-half {
