@@ -153,6 +153,11 @@ nav li{
   /* background-color: #465B76; */
   /* color: #fff; */
 }
+.hero .medium-text{
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
 .our-work{
   background-color: #465B76;
 }
