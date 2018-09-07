@@ -91,6 +91,34 @@ h1{
   margin-bottom: 1rem;
 }
 
+img{
+  width: 100%;
+}
+
+a, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  color: black;
+}
+
+html {
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr auto auto;
+}
+
+.main {
+  /* padding: 1rem; */
+}
+
 /* Sections */
 
 .header{
@@ -106,7 +134,6 @@ h1{
   font-family: "Ginger";
   font-size: 1.5rem;
   margin-top: 1.5rem;
-
 }
 
 .visually-hidden{
@@ -137,41 +164,20 @@ nav li{
 .header, .hero {
   background-color: #F4D5D1;
 }
-.hero .medium-text{
-  /* font-weight: 900; */
-}
 
 .partners{
   background-color: #faeeec;
 }
 
 .partners .grid-row{
-  padding: 1rem 0;
+  padding: 0;
 }
 
-.introduction, .values {
-  /* background-color: #465B76; */
-  /* color: #fff; */
-}
 .hero .medium-text{
   max-width: 600px;
   margin-top: 2rem;
 }
 
-.our-work{
-  background-color: #465B76;
-}
-.our-work .display{
-  color: #2C578F;
-}
-.our-work .link{
-  position: absolute;
-  bottom: 2rem;
-}
-.support {
-  background-color: #465B76;
-  color: #fff;
-}
 .values .grid-row:first-of-type{
   padding-bottom: 0;
 }
@@ -180,34 +186,6 @@ nav li{
   padding-top: 0;
 }
 
-
-img{
-  width: 100%;
-}
-
-a, a:visited {
-  color: #000;
-  text-decoration: none;
-}
-a:hover, a:active, a:focus {
-  color: black;
-}
-
-html {
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  display: grid;
-  height: 100%;
-  grid-template-rows: auto 1fr auto auto;
-}
-
-.main {
-  /* padding: 1rem; */
-}
 
 /* Table */
 .table {
