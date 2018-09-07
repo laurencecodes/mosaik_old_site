@@ -1,0 +1,400 @@
+@font-face {
+    font-family: 'Ginger';
+    src: url('../fonts/f37ginger-bold-webfont.eot');
+    src: url('../fonts/f37ginger-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/f37ginger-bold-webfont.woff') format('woff'),
+         url('../fonts/f37ginger-bold-webfont.ttf') format('truetype'),
+         url('../fonts/f37ginger-bold-webfont.svg#f37_gingerbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  /* System Fonts as used by GitHub */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: snow;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, b {
+  font-weight: normal;
+  font-family: "Ginger";
+}
+
+h1{
+  margin-top: 0;
+}
+
+.large-text{
+  font-size: 2rem;
+}
+
+.medium-text{
+  font-size: 1.25rem;
+}
+
+.display{
+  font-family: "Ginger", sans-serif;
+}
+
+.button{
+  padding: 10px 15px;
+  background: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.button:hover{
+  background: #c5ccdd;
+  transition: background-color 0.5s ease;
+}
+
+.link{
+  color: #2C578F !important;
+  margin-bottom: 2px;
+  font-size: 1rem;
+  font-weight: 900;
+  border-bottom: 2px solid #2C578F;
+}
+.link:hover{
+  border-bottom: 3px solid #2C578F;
+  margin-bottom: 1px;
+}
+
+/* Grid */
+
+.grid-row {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+.grid-row .column-full {
+  max-width: 40rem;
+  opacity: 0.8;
+}
+
+.grid-row .column-one-fifth {
+  width: 32%;
+  display: inline-flex;
+}
+
+.grid-row p {
+  margin-bottom: 1rem;
+}
+
+/* Sections */
+
+.header{
+  display: flow-root;
+}
+
+.header .grid-row{
+  padding: 0 0 0 1rem;
+}
+
+.Agora-education{
+  font-weight: bold;
+  font-family: "Ginger";
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+
+}
+
+.visually-hidden{
+  visibility: hidden;
+  font-size: 0;
+}
+
+nav{
+  width: 100%;
+  margin-top: .75rem;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li{
+  display: inline;
+  margin-right: 1rem;
+  text-decoration: underline;
+}
+
+.hero p{
+  margin-top: 0rem;
+}
+
+.header, .hero {
+  background-color: #F4D5D1;
+}
+.hero .medium-text{
+  /* font-weight: 900; */
+}
+
+.partners{
+  background-color: #faeeec;
+}
+
+.partners .grid-row{
+  padding: 1rem 0;
+}
+
+.introduction, .values {
+  /* background-color: #465B76; */
+  /* color: #fff; */
+}
+.hero .medium-text{
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.our-work{
+  background-color: #465B76;
+}
+.our-work .display{
+  color: #2C578F;
+}
+.our-work .link{
+  position: absolute;
+  bottom: 2rem;
+}
+.support {
+  background-color: #465B76;
+  color: #fff;
+}
+.values .grid-row:first-of-type{
+  padding-bottom: 0;
+}
+
+.values .grid-row:nth-of-type(2){
+  padding-top: 0;
+}
+
+
+img{
+  width: 100%;
+}
+
+a, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  color: black;
+}
+
+html {
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr auto auto;
+}
+
+.main {
+  /* padding: 1rem; */
+}
+
+/* Table */
+.table {
+  display: flex;
+  flex-wrap:wrap;
+  font-size: 1rem;
+}
+
+.table h3, .table p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-holder.text{
+  display: block;
+  padding: 2rem 0rem;
+}
+
+.card div, .card ul {
+  margin: 0 1rem;
+}
+.image {
+  margin: 0 !important;
+  width: 100%;
+  padding-bottom: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+.title h3 {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #222;
+}
+.title a {
+  color: #222;
+}
+.description {
+  padding: 0.5rem 0 1rem;
+  flex: 1;
+}
+.components {
+  margin-top: auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-bottom: 0.75rem;
+}
+.components li {
+  border-top: 1px solid #eee;
+  width: 100%;
+  padding: 0.3rem 0;
+  display:flex;
+  align-content: center;
+}
+.components li a {
+  padding: 0.5rem 0;
+  line-height: 1.2;
+  width: 100%;
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+  color: #333;
+}
+.components li a:hover, .components li a:focus {
+  background-color: white;
+  text-decoration:underline;
+}
+.components li a span.icon {
+  margin-right: 0.3rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon.chevron {height: 0.75rem !important;width: 0.75rem !important; background-image:url('img/icons/chevron.svg');margin-left: auto;}
+
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem 1rem;
+}
+
+.footer p.subfooter {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+/* Desktop styling */
+@media (min-width: 48rem) {
+
+  .large-text{
+    font-size: 3.5rem;
+  }
+
+  .medium-text{
+    font-size: 1.5rem;
+  }
+
+
+  .header .grid-row{
+    padding: 0;
+  }
+
+  nav{
+    width: auto;
+  }
+
+  .table {
+    justify-content: flex-start;
+    border-radius: 5px;
+  }
+
+  .card-holder {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .card-holder.text{
+    width: 48%;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    margin: 1rem;
+    height: 100%;
+  }
+
+  .grid-row {
+    max-width: 64rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .grid-row .column-one-whole{
+    width: 100%;
+  }
+
+  .grid-row .column-one-half {
+    max-width: 48%;
+  }
+
+  .grid-row .column-one-third {
+    max-width: 33.33%;
+  }
+
+  .grid-row .column-two-thirds {
+    max-width: 66.66%;
+  }
+
+  .grid-row .column-one-fifth {
+    max-width: 20%;
+  }
+
+}
+
+@media (min-width: 66rem) {
+
+  .card-holder, .card-holder.text {
+    width: 33.33%;
+  }
+
+  .card-holder.text {
+    padding: 1rem 0;
+  }
+
+}
