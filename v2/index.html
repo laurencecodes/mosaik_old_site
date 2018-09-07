@@ -45,6 +45,21 @@
   <meta name="twitter:url" content="http://www.agora.com" />
   <meta name="twitter:image" content="http://www.agora.com/img/og-image.png" />
 
+  <script type="text/javascript">
+      function showme(id) {
+          var divid = document.getElementById(id + "-content");
+          var toggleLink = document.getElementById(id + "-link");
+          if (divid.style.display == 'block') {
+              toggleLink.innerHTML = 'Show';
+              divid.style.display = 'none';
+          }
+          else {
+              toggleLink.innerHTML = 'Hide';
+              divid.style.display = 'block';
+          }
+      }
+  </script>
+
   </head>
   <body>
 
@@ -117,6 +132,196 @@
         <div class="grid-row">
           <div class="column-two-thirds">
             <h2 class="medium-text">The learning journey</h2>
+
+            <div class="step-nav step-nav--large step-nav--active">
+
+              <ol class="step-nav__steps">
+                <li class="step-nav__step js-step" id="">
+                  <div class="step-nav__header js-toggle-panel" data-position="1">
+                    <h2 class="step-nav__title">
+                      <span class="step-nav__circle step-nav__circle--number">
+                        <span class="step-nav__circle-inner">
+                          <span class="step-nav__circle-background">
+                            <span class="visuallyhidden">
+                              Step
+                            </span>
+                            1
+                            <span class="visuallyhidden" aria-hidden="true">
+                              :
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+
+                      <span class="js-step-title">
+                        <button id="awareness" class="step-nav__button step-nav__button--title js-step-title-button" onclick="showme(this.id);">
+                          <span class="js-step-title-text">
+                            Awareness
+                          </span>
+                          <span id="awareness-link" class="step-nav__toggle-link js-toggle-link">
+                            show
+                          </span>
+                        </button>
+                      </span>
+                    </h2>
+                  </div>
+
+                  <div class="step-nav__panel js-panel" id="awareness-content" style="display: none;" >
+                    <p class="step-nav__paragraph">Most people can start learning to drive when they’re 17.</p>
+                  </div>
+                </li>
+              </ol>
+
+              <ol class="step-nav__steps">
+                <li class="step-nav__step js-step" id="">
+                  <div class="step-nav__header js-toggle-panel" data-position="1">
+                    <h2 class="step-nav__title">
+                      <span class="step-nav__circle step-nav__circle--number">
+                        <span class="step-nav__circle-inner">
+                          <span class="step-nav__circle-background">
+                            <span class="visuallyhidden">
+                              Step
+                            </span>
+                            2
+                            <span class="visuallyhidden" aria-hidden="true">
+                              :
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+
+                      <span class="js-step-title">
+                        <button id="preparation" class="step-nav__button step-nav__button--title js-step-title-button" onclick="showme(this.id);">
+                          <span class="js-step-title-text">
+                            Preparation
+                          </span>
+                          <span id="preparation-link" class="step-nav__toggle-link js-toggle-link">
+                            show
+                          </span>
+                        </button>
+                      </span>
+                    </h2>
+                  </div>
+
+                  <div class="step-nav__panel js-panel" id="preparation-content" style="display: none;" >
+                    <p class="step-nav__paragraph">Most people can start learning to drive when they’re 17.</p>
+                  </div>
+                </li>
+              </ol>
+
+              <ol class="step-nav__steps">
+                <li class="step-nav__step js-step" id="">
+                  <div class="step-nav__header js-toggle-panel" data-position="1">
+                    <h2 class="step-nav__title">
+                      <span class="step-nav__circle step-nav__circle--number">
+                        <span class="step-nav__circle-inner">
+                          <span class="step-nav__circle-background">
+                            <span class="visuallyhidden">
+                              Step
+                            </span>
+                            3
+                            <span class="visuallyhidden" aria-hidden="true">
+                              :
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+
+                      <span class="js-step-title">
+                        <button id="enrollment" class="step-nav__button step-nav__button--title js-step-title-button" onclick="showme(this.id);">
+                          <span class="js-step-title-text">
+                            Enrollemnt
+                          </span>
+                          <span id="enrollment-link" class="step-nav__toggle-link js-toggle-link">
+                            show
+                          </span>
+                        </button>
+                      </span>
+                    </h2>
+                  </div>
+
+                  <div class="step-nav__panel js-panel" id="enrollment-content" style="display: none;" >
+                    <p class="step-nav__paragraph">Most people can start learning to drive when they’re 17.</p>
+                  </div>
+                </li>
+              </ol>
+
+              <ol class="step-nav__steps">
+                <li class="step-nav__step js-step" id="">
+                  <div class="step-nav__header js-toggle-panel" data-position="1">
+                    <h2 class="step-nav__title">
+                      <span class="step-nav__circle step-nav__circle--number">
+                        <span class="step-nav__circle-inner">
+                          <span class="step-nav__circle-background">
+                            <span class="visuallyhidden">
+                              Step
+                            </span>
+                            4
+                            <span class="visuallyhidden" aria-hidden="true">
+                              :
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+
+                      <span class="js-step-title">
+                        <button id="passing" class="step-nav__button step-nav__button--title js-step-title-button" onclick="showme(this.id);">
+                          <span class="js-step-title-text">
+                            Passing
+                          </span>
+                          <span id="passing-link" class="step-nav__toggle-link js-toggle-link">
+                            show
+                          </span>
+                        </button>
+                      </span>
+                    </h2>
+                  </div>
+
+                  <div class="step-nav__panel js-panel" id="passing-content" style="display: none;" >
+                    <p class="step-nav__paragraph">Most people can start learning to drive when they’re 17.</p>
+                  </div>
+                </li>
+              </ol>
+
+              <ol class="step-nav__steps">
+                <li class="step-nav__step js-step" id="">
+                  <div class="step-nav__header js-toggle-panel" data-position="1">
+                    <h2 class="step-nav__title">
+                      <span class="step-nav__circle step-nav__circle--number">
+                        <span class="step-nav__circle-inner">
+                          <span class="step-nav__circle-background">
+                            <span class="visuallyhidden">
+                              Step
+                            </span>
+                            5
+                            <span class="visuallyhidden" aria-hidden="true">
+                              :
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+
+                      <span class="js-step-title">
+                        <button id="graduation" class="step-nav__button step-nav__button--title js-step-title-button" onclick="showme(this.id);">
+                          <span class="js-step-title-text">
+                            Graduation
+                          </span>
+                          <span id="graduation-link" class="step-nav__toggle-link js-toggle-link">
+                            show
+                          </span>
+                        </button>
+                      </span>
+                    </h2>
+                  </div>
+
+                  <div class="step-nav__panel js-panel" id="graduation-content" style="display: none;" >
+                    <p class="step-nav__paragraph">Most people can start learning to drive when they’re 17.</p>
+                  </div>
+                </li>
+              </ol>
+
+
+            </div>
           </div>
         </div>
       </section>
