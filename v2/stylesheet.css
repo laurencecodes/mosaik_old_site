@@ -180,7 +180,10 @@ nav li{
 
 .journey{
   background-color: #465B76;
-  color: #F4D5D1;
+}
+
+.journey h2, .journey h3{
+  color: #fff;
 }
 
 .values .grid-row:first-of-type{
@@ -225,7 +228,7 @@ nav li{
 .image {
   margin: 0 !important;
   width: 100%;
-  padding-bottom: 50%;
+  padding-bottom: 65%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -233,13 +236,10 @@ nav li{
 }
 .title h3 {
   margin: 1rem 0;
-  font-size: 1.6rem;
-  line-height: 1.2;
+  font-size: 1.2rem;
   color: #222;
 }
-.title a {
-  color: #222;
-}
+
 .description {
   padding: 0.5rem 0 1rem;
   flex: 1;
@@ -250,7 +250,7 @@ nav li{
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
 }
 .components li {
   border-top: 1px solid #eee;
@@ -281,7 +281,7 @@ nav li{
   background-repeat: no-repeat;
 }
 
-.icon.chevron {height: 0.75rem !important;width: 0.75rem !important; background-image:url('img/icons/chevron.svg');margin-left: auto;}
+.icon.chevron {height: 0.75rem !important;width: 0.75rem !important; background-image:url('../img/icons/chevron.svg');margin-left: auto;}
 
 .footer {
   background-color: #000;
@@ -458,10 +458,9 @@ nav li{
 
 .step-nav__step{
   padding: 0rem 1rem 1rem 45px;
-  color: #fff;
 }
 
-.step-nav__step a{
+a.toggle{
   color: #fff;
   text-decoration: underline;
   margin-bottom: 1rem;

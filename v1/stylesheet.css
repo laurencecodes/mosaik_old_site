@@ -298,7 +298,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.icon.chevron {height: 0.75rem !important;width: 0.75rem !important; background-image:url('img/icons/chevron.svg');margin-left: auto;}
+.icon.chevron {height: 0.75rem !important;width: 0.75rem !important; background-image:url('../img/icons/chevron.svg');margin-left: auto;}
 
 
 .footer {

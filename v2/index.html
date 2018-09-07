@@ -49,15 +49,24 @@
       function showme(id) {
           var divid = document.getElementById(id + "-content");
           var toggleLink = document.getElementById(id);
-          if (divid.style.display == 'block') {
-              toggleLink.innerHTML = 'See our work';
-              divid.style.display = 'none';
-          }
-          else {
-              toggleLink.innerHTML = 'Hide our work';
+          if (divid.style.display == 'none') {
+              toggleLink.style.display = 'none';
               divid.style.display = 'block';
           }
       }
+
+      // function showme(id) {
+      //     var divid = document.getElementById(id + "-content");
+      //     var toggleLink = document.getElementById(id);
+      //     if (divid.style.display == 'none') {
+      //         toggleLink.innerHTML = 'See our work';
+      //         divid.style.display = 'none';
+      //     }
+      //     else {
+      //         toggleLink.innerHTML = 'Hide';
+      //         divid.style.display = 'block';
+      //     }
+      // }
   </script>
 
   </head>
@@ -123,14 +132,14 @@
             </p>
           </div>
           <div class="column-one-half">
-            <img src="../img/refugees.jpg" alt="image">
+            <img src="../img/refugees-placeholder.jpg" alt="image">
           </div>
         </div>
       </section>
 
       <section class="journey">
         <div class="grid-row">
-          <div class="column-two-thirds">
+          <div class="column-one-whole">
             <h2 class="medium-text">The learning journey</h2>
 
             <div class="step-nav step-nav--large step-nav--active">
@@ -151,11 +160,79 @@
                   <!-- <p>
                     Helping refugees access information and advice on higher education opportunities.
                   </p> -->
-                  <a href="javascript:;" id="awareness" onclick="showme(this.id);">
+                  <a href="javascript:;" class="toggle" id="awareness" onclick="showme(this.id);">
                     See our work
                   </a>
                   <div id="awareness-content" style="display: none;">
-                    Content
+
+                    <div class="table">
+
+                      <div class="card-holder">
+                        <div class="card">
+                          <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                          <div class="title">
+                            <h3>
+                              Online content
+                            </h3>
+                          </div>
+                          <div class="description" style="color: #000;">
+                            <p>Inspirational, informative advice for refugees interested in higher education.</p>
+                          </div>
+                          <ul class="components">
+                            <li>
+                              <a href="dardachat.html">
+                                <span class="text">Link to thing</span>
+                                <span class="icon chevron"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="card-holder">
+                        <div class="card">
+                          <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                          <div class="title">
+                            <h3>
+                              Guidance workshops
+                            </h3>
+                          </div>
+                          <div class="description">
+                            <p>higher education options and how to evaluate</p>
+                          </div>
+                          <ul class="components">
+                            <li>
+                              <a href="organisations.html">
+                                <span class="text">Link to thing</span>
+                                <span class="icon chevron"></span>
+                              </a>
+                            </li>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="card-holder">
+                        <div class="card">
+                          <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                          <div class="title">
+                            <h3>
+                              Peer mentorship
+                            </h3>
+                          </div>
+                          <div class="description">
+                            <p>Peer mentorship on programme and subject experiences</p>
+                          </div>
+                          <ul class="components">
+                            <li>
+                              <a href="organisations.html">
+                                <span class="text">Link to thing</span>
+                                <span class="icon chevron"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
                   </div>
                 </li>
               </ol>
@@ -175,11 +252,121 @@
                   <!-- <p>
                     Helping refugees access information and advice on higher education opportunities.
                   </p> -->
-                  <a href="javascript:;" id="preparation" onclick="showme(this.id);">
+                  <a href="javascript:;" class="toggle" id="preparation" onclick="showme(this.id);">
                     See our work
                   </a>
                   <div id="preparation-content" style="display: none;">
-                    Content
+
+                    <div class="table">
+
+                      <div class="card-holder">
+                        <div class="card">
+                          <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                          <div class="title">
+                            <h3>
+                              Peer mentorship on application experience.
+                            </h3>
+                          </div>
+                          <div class="description" style="color: #000;">
+                            <p>Peer mentorship on application experience.</p>
+                          </div>
+                          <ul class="components">
+                            <li>
+                              <a href="dardachat.html">
+                                <span class="text">Link to thing</span>
+                                <span class="icon chevron"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="card-holder">
+                        <div class="card">
+                          <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                          <div class="title">
+                            <h3>
+                              Workshops
+                            </h3>
+                          </div>
+                          <div class="description">
+                            <p>Plan and prepare scholarship applications.</p>
+                          </div>
+                          <ul class="components">
+                            <li>
+                              <a href="organisations.html">
+                                <span class="text">Link to thing</span>
+                                <span class="icon chevron"></span>
+                              </a>
+                            </li>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="card-holder">
+                        <div class="card">
+                          <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                          <div class="title">
+                            <h3>
+                              Training
+                            </h3>
+                          </div>
+                          <div class="description">
+                            <p>English language training: A1-B2</p>
+                          </div>
+                          <ul class="components">
+                            <li>
+                              <a href="organisations.html">
+                                <span class="text">Link to thing</span>
+                                <span class="icon chevron"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+
+                    <div class="card-holder">
+                      <div class="card">
+                        <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                        <div class="title">
+                          <h3>
+                            Academic skills
+                          </h3>
+                        </div>
+                        <div class="description">
+                          <p>Management, autonomous study, extended writing</p>
+                        </div>
+                        <ul class="components">
+                          <li>
+                            <a href="organisations.html">
+                              <span class="text">Link to thing</span>
+                              <span class="icon chevron"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-holder">
+                      <div class="card">
+                        <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                        <div class="title">
+                          <h3>
+                            Finance
+                          </h3>
+                        </div>
+                        <div class="description">
+                          <p>Crowdfunding student sponsorship for tuition fees and living costs</p>
+                        </div>
+                        <ul class="components">
+                          <li>
+                            <a href="organisations.html">
+                              <span class="text">Link to thing</span>
+                              <span class="icon chevron"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                   </div>
                 </li>
               </ol>
@@ -199,11 +386,54 @@
                   <!-- <p>
                     Helping refugees access information and advice on higher education opportunities.
                   </p> -->
-                  <a href="javascript:;" id="enrollment" onclick="showme(this.id);">
+                  <a href="javascript:;" class="toggle" id="enrollment" onclick="showme(this.id);">
                     See our work
                   </a>
                   <div id="enrollment-content" style="display: none;">
-                    Content
+
+                    <div class="table">
+
+                      <div class="card-holder">
+                        <div class="card">
+                          <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                          <div class="title">
+                            <h3>
+                              Online content
+                            </h3>
+                          </div>
+                          <div class="description" style="color: #000;">
+                            <p>Peer online content about challenges faced in adapting to university</p>
+                          </div>
+                          <ul class="components">
+                            <li>
+                              <a href="dardachat.html">
+                                <span class="text">Link to thing</span>
+                                <span class="icon chevron"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="card-holder">
+                        <div class="card">
+                          <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                          <div class="title">
+                            <h3>
+                              Finance
+                            </h3>
+                          </div>
+                          <div class="description">
+                            <p>Crowdfunding student sponsorship for tuition fees and living costs</p>
+                          </div>
+                          <ul class="components">
+                            <li>
+                              <a href="organisations.html">
+                                <span class="text">Link to thing</span>
+                                <span class="icon chevron"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
                   </div>
                 </li>
               </ol>
@@ -223,11 +453,35 @@
                   <!-- <p>
                     Helping refugees access information and advice on higher education opportunities.
                   </p> -->
-                  <a href="javascript:;" id="passing" onclick="showme(this.id);">
+                  <a href="javascript:;" class="toggle" id="passing" onclick="showme(this.id);">
                     See our work
                   </a>
                   <div id="passing-content" style="display: none;">
-                    Content
+
+                    <div class="table">
+
+                      <div class="card-holder">
+                        <div class="card">
+                          <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div>
+                          <div class="title">
+                            <h3>
+                              Online content
+                            </h3>
+                          </div>
+                          <div class="description" style="color: #000;">
+                            <p>Peer online content about challenges faced in adapting to university</p>
+                          </div>
+                          <ul class="components">
+                            <li>
+                              <a href="dardachat.html">
+                                <span class="text">Link to thing</span>
+                                <span class="icon chevron"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
                   </div>
                 </li>
               </ol>
