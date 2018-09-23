@@ -200,6 +200,7 @@ nav li{
 
 .journey{
   background-color: #465B76;
+  color: #fff;
 }
 
 .journey h2, .journey h3{
@@ -248,6 +249,7 @@ nav li{
   width: 16rem;
   margin: 1rem;
   height: 100%;
+  color: #000;
 }
 
 .card div, .card ul {
