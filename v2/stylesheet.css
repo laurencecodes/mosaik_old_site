@@ -221,9 +221,12 @@ nav li{
 
 /* Table */
 .table {
-  display: flex;
-  flex-wrap:wrap;
   font-size: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .table h3, .table p {
@@ -231,24 +234,26 @@ nav li{
   margin-bottom: 0.5rem;
 }
 
+.card-holder {
+  flex-direction: column;
+  display: flex;
+}
+
 .card {
   margin-bottom: 2rem;
   background-color: white;
   border-radius: 5px;
-  overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0,0,0,0.05);
-  display: flex;
   flex-direction: column;
-}
-
-.card-holder.text{
-  display: block;
-  padding: 2rem 0rem;
+  width: 16rem;
+  margin: 1rem;
+  height: 100%;
 }
 
 .card div, .card ul {
   margin: 0 1rem;
 }
+
 .image {
   margin: 0 !important;
   width: 100%;
@@ -257,7 +262,9 @@ nav li{
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 1rem;
+  border-radius: 5px 5px 0px 0px;
 }
+
 .title h4 {
   margin: 1rem 0;
   font-size: 1.2rem;
@@ -334,7 +341,6 @@ nav li{
     font-size: 1.5rem;
   }
 
-
   .header .grid-row{
     padding: 0;
   }
@@ -346,23 +352,6 @@ nav li{
   .table {
     justify-content: flex-start;
     border-radius: 5px;
-  }
-
-  .card-holder {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .card-holder.text{
-    width: 48%;
-    padding: 2rem 1rem;
-  }
-
-  .card {
-    margin: 1rem;
-    height: 100%;
   }
 
   .grid-row {
@@ -390,25 +379,13 @@ nav li{
   .grid-row .column-one-fifth {
     width: 20%;
   }
-
-}
-
-@media (min-width: 66rem) {
-
-  .card-holder, .card-holder.text {
-    width: 33.33%;
-  }
-
-  .card-holder.text {
-    padding: 1rem 0;
-  }
-
 }
 
 .step-nav__steps {
     padding: 0;
     margin: 0;
 }
+
 @media (min-width: 641px)
 .step-nav--large .step-nav__step {
     padding-left: 60px;
