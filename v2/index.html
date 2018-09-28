@@ -8,6 +8,7 @@
     <title>Mosaik Education</title>
   <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon">
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="flickity.css" media="screen">
 
   <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
@@ -135,75 +136,19 @@
                     </h3>
                   </div>
 
-                  <div id="awareness-content">
-
-                    <div class="table">
-
-                      <div class="card-holder">
-                        <div class="card">
-                          <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                          <div class="title">
-                            <h4>
-                              Online content
-                            </h4>
-                          </div>
-                          <div class="description" style="color: #000;">
-                            <p>Inspirational, informative advice for refugees interested in higher education.</p>
-                          </div>
-                          <!-- <ul class="components">
-                            <li>
-                              <a href="dardachat.html">
-                                <span class="text">Link to thing</span>
-                                <span class="icon chevron"></span>
-                              </a>
-                            </li>
-                          </ul> -->
-                        </div>
-                      </div>
-
-                      <div class="card-holder">
-                        <div class="card">
-                          <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                          <div class="title">
-                            <h4>
-                              Guidance workshops
-                            </h4>
-                          </div>
-                          <div class="description">
-                            <p>higher education options and how to evaluate</p>
-                          </div>
-                          <!-- <ul class="components">
-                            <li>
-                              <a href="organisations.html">
-                                <span class="text">Link to thing</span>
-                                <span class="icon chevron"></span>
-                              </a>
-                            </li>
-                          </ul> -->
-                        </div>
-                      </div>
-
-                      <div class="card-holder">
-                        <div class="card">
-                          <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                          <div class="title">
-                            <h4>
-                              Peer mentorship
-                            </h4>
-                          </div>
-                          <div class="description">
-                            <p>Peer mentorship on programme and subject experiences</p>
-                          </div>
-                          <!-- <ul class="components">
-                            <li>
-                              <a href="organisations.html">
-                                <span class="text">Link to thing</span>
-                                <span class="icon chevron"></span>
-                              </a>
-                            </li>
-                          </ul> -->
-                        </div>
-
+                  <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
+                    <div class="card">
+                      <h4>Online content</h4>
+                      <p>Inspirational, informative advice for refugees interested in higher education.</p>
+                    </div>
+                    <div class="card">
+                      <h4>Guidance workshops</h4>
+                      <p>Higher education options and how to evaluate.</p>
+                    </div>
+                    <div class="card">
+                      <h4>Peer mentorship</h4>
+                      <p>Peer mentorship on programme and subject experiences.</p>
+                    </div>
                   </div>
                 </li>
               </ol>
@@ -221,117 +166,29 @@
                     </h3>
                   </div>
 
-                  <div id="preparation-content">
+                  <div id="preparation-content" class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
 
-                    <div class="table">
-
-                      <div class="card-holder">
-                        <div class="card">
-                          <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                          <div class="title">
-                            <h4>
-                              Peer mentorship on application experience
-                            </h4>
-                          </div>
-                          <div class="description" style="color: #000;">
-                            <p>Peer mentorship on application experience.</p>
-                          </div>
-                          <!-- <ul class="components">
-                            <li>
-                              <a href="dardachat.html">
-                                <span class="text">Link to thing</span>
-                                <span class="icon chevron"></span>
-                              </a>
-                            </li>
-                          </ul> -->
-                        </div>
-                      </div>
-
-                      <div class="card-holder">
-                        <div class="card">
-                          <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                          <div class="title">
-                            <h4>
-                              Workshops
-                            </h4>
-                          </div>
-                          <div class="description">
-                            <p>Plan and prepare scholarship applications.</p>
-                          </div>
-                          <!-- <ul class="components">
-                            <li>
-                              <a href="organisations.html">
-                                <span class="text">Link to thing</span>
-                                <span class="icon chevron"></span>
-                              </a>
-                            </li>
-                          </ul> -->
-                        </div>
-                      </div>
-
-                      <div class="card-holder">
-                        <div class="card">
-                          <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                          <div class="title">
-                            <h4>
-                              Training
-                            </h4>
-                          </div>
-                          <div class="description">
-                            <p>English language training: A1-B2</p>
-                          </div>
-                          <!-- <ul class="components">
-                            <li>
-                              <a href="organisations.html">
-                                <span class="text">Link to thing</span>
-                                <span class="icon chevron"></span>
-                              </a>
-                            </li>
-                          </ul> -->
-                        </div>
+                    <div class="card">
+                      <h4>Peer mentorship on application experience</h4>
+                      <p>Peer mentorship on application experience.</p>
+                    </div>
+                    <div class="card">
+                      <h4>Workshops</h4>
+                      <p>Plan and prepare scholarship applications.</p>
+                    </div>
+                    <div class="card">
+                      <h4>Training</h4>
+                      <p>English language training: A1-B2.</p>
+                    </div>
+                    <div class="card">
+                      <h4>Academic skills</h4>
+                      <p>Management, autonomous study, extended writing.</p>
+                    </div>
+                    <div class="card">
+                      <h4>Finance</h4>
+                      <p>Crowdfunding student sponsorship for tuition fees and living costs.</p>
                     </div>
 
-                    <div class="card-holder">
-                      <div class="card">
-                        <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                        <div class="title">
-                          <h4>
-                            Academic skills
-                          </h4>
-                        </div>
-                        <div class="description">
-                          <p>Management, autonomous study, extended writing</p>
-                        </div>
-                        <!-- <ul class="components">
-                          <li>
-                            <a href="organisations.html">
-                              <span class="text">Link to thing</span>
-                              <span class="icon chevron"></span>
-                            </a>
-                          </li>
-                        </ul> -->
-                      </div>
-                    </div>
-                    <div class="card-holder">
-                      <div class="card">
-                        <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                        <div class="title">
-                          <h4>
-                            Finance
-                          </h4>
-                        </div>
-                        <div class="description">
-                          <p>Crowdfunding student sponsorship for tuition fees and living costs</p>
-                        </div>
-                        <!-- <ul class="components">
-                          <li>
-                            <a href="organisations.html">
-                              <span class="text">Link to thing</span>
-                              <span class="icon chevron"></span>
-                            </a>
-                          </li>
-                        </ul> -->
-                      </div>
                   </div>
                 </li>
               </ol>
@@ -349,51 +206,17 @@
                     </h3>
                   </div>
 
-                  <div id="enrollment-content">
+                  <div id="enrollment-content" class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
 
-                    <div class="table">
+                    <div class="card">
+                      <h4>Online content</h4>
+                      <p>Peer online content about challenges faced in adapting to university.</p>
+                    </div>
+                    <div class="card">
+                      <h4>Finance</h4>
+                      <p>Crowdfunding student sponsorship for tuition fees and living costs.</p>
+                    </div>
 
-                      <div class="card-holder">
-                        <div class="card">
-                          <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                          <div class="title">
-                            <h4>
-                              Online content
-                            </h4>
-                          </div>
-                          <div class="description" style="color: #000;">
-                            <p>Peer online content about challenges faced in adapting to university</p>
-                          </div>
-                          <!-- <ul class="components">
-                            <li>
-                              <a href="dardachat.html">
-                                <span class="text">Link to thing</span>
-                                <span class="icon chevron"></span>
-                              </a>
-                            </li>
-                          </ul> -->
-                        </div>
-                      </div>
-                      <div class="card-holder">
-                        <div class="card">
-                          <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                          <div class="title">
-                            <h4>
-                              Finance
-                            </h4>
-                          </div>
-                          <div class="description">
-                            <p>Crowdfunding student sponsorship for tuition fees and living costs</p>
-                          </div>
-                          <!-- <ul class="components">
-                            <li>
-                              <a href="organisations.html">
-                                <span class="text">Link to thing</span>
-                                <span class="icon chevron"></span>
-                              </a>
-                            </li>
-                          </ul> -->
-                        </div>
                   </div>
                 </li>
               </ol>
@@ -411,31 +234,12 @@
                     </h3>
                   </div>
 
-                  <div id="passing-content">
+                  <div id="passing-content" class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
 
-                    <div class="table">
-
-                      <div class="card-holder">
-                        <div class="card">
-                          <!-- <div class="image" style="background-image: url('../img/refugees-placeholder.jpg')"></div> -->
-                          <div class="title">
-                            <h4>
-                              Online content
-                            </h4>
-                          </div>
-                          <div class="description" style="color: #000;">
-                            <p>Peer online content about challenges faced in adapting to university</p>
-                          </div>
-                          <!-- <ul class="components">
-                            <li>
-                              <a href="dardachat.html">
-                                <span class="text">Link to thing</span>
-                                <span class="icon chevron"></span>
-                              </a>
-                            </li>
-                          </ul> -->
-                        </div>
-                      </div>
+                    <div class="card">
+                      <h4>Online content</h4>
+                      <p>Peer online content about challenges faced in adapting to university.</p>
+                    </div>
 
                   </div>
                 </li>
@@ -538,5 +342,21 @@
       Mosaik Education is a UK registered charitable incorporated organisation, registration number: 1176947.
   </div>
 
+  <script src="flickity.pkgd.min.js"></script>
+  <script>
+    // hide nav if end reached
+    var flkty = new Flickity( '.gallery', {
+      contain: true
+    });
+
+    flkty.on( 'select', function() {
+      var target = flkty.selectedCell.target;
+      if ( target == flkty.cells[0].target ) {
+        console.log('is at contained start')
+      } else if ( target == flkty.getLastCell().target ) {
+        console.log('is at contained end')
+      }
+    });
+  </script>
   </body>
 </html>

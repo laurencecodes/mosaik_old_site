@@ -235,21 +235,17 @@ nav li{
   margin-bottom: 0.5rem;
 }
 
-.card-holder {
-  flex-direction: column;
-  display: flex;
-}
-
 .card {
   margin-bottom: 2rem;
+  padding: 0 1rem;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 1rem 2rem rgba(0,0,0,0.05);
   flex-direction: column;
   width: 16rem;
   margin: 1rem;
-  height: 100%;
   color: #000;
+  height: 160px;
 }
 
 .card div, .card ul {
@@ -267,7 +263,7 @@ nav li{
   border-radius: 5px 5px 0px 0px;
 }
 
-.title h4 {
+.card h4 {
   margin: 1rem 0;
   font-size: 1.2rem;
   color: #222;
@@ -474,4 +470,21 @@ a.toggle{
   margin: 10px 0 1rem 0;
   display: inline-block;
   font-size: 1.5rem;
+}
+
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.flickity-button[disabled]{
+  display: none;
 }
