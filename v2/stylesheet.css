@@ -338,7 +338,7 @@ nav li{
   }
 
   .header .grid-row{
-    padding: 0;
+    padding: 0 0 0 1rem;
   }
 
   nav{
@@ -488,4 +488,8 @@ body { font-family: sans-serif; }
 
 .main-gallery .card:first-child{
   margin-left: 0;
+}
+
+#how-we-work-page img{
+  margin-top: 6rem;
 }
