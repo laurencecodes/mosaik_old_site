@@ -315,12 +315,6 @@ nav li{
 .footer {
   background-color: #000;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 2rem 1rem;
 }
 
 .footer p.subfooter {
