@@ -328,6 +328,10 @@ nav li{
   opacity: 0.7;
 }
 
+.flickity-button{
+  border-radius: 0 !important;
+}
+
 /* Desktop styling */
 @media (min-width: 48rem) {
 
@@ -383,6 +387,9 @@ nav li{
     padding: 0;
     margin: 0;
 }
+
+
+
 
 @media (min-width: 641px)
 .step-nav--large .step-nav__step {
@@ -481,10 +488,10 @@ a.toggle{
 
 body { font-family: sans-serif; }
 
-.gallery {
-  background: #EEE;
-}
-
 .flickity-button[disabled]{
   display: none;
+}
+
+.main-gallery .card:first-child{
+  margin-left: 0;
 }

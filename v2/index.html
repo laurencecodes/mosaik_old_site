@@ -136,7 +136,7 @@
                     </h3>
                   </div>
 
-                  <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
+                  <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "groupCells": true }'>
                     <div class="card">
                       <h4>Online content</h4>
                       <p>Inspirational, informative advice for refugees interested in higher education.</p>
@@ -166,7 +166,7 @@
                     </h3>
                   </div>
 
-                  <div id="preparation-content" class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
+                  <div id="preparation-content" class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "groupCells": true }'>
 
                     <div class="card">
                       <h4>Peer mentorship on application experience</h4>
@@ -206,7 +206,7 @@
                     </h3>
                   </div>
 
-                  <div id="enrollment-content" class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
+                  <div id="enrollment-content" class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "groupCells": true }'>
 
                     <div class="card">
                       <h4>Online content</h4>
@@ -343,20 +343,5 @@
   </div>
 
   <script src="flickity.pkgd.min.js"></script>
-  <script>
-    // hide nav if end reached
-    var flkty = new Flickity( '.gallery', {
-      contain: true
-    });
-
-    flkty.on( 'select', function() {
-      var target = flkty.selectedCell.target;
-      if ( target == flkty.cells[0].target ) {
-        console.log('is at contained start')
-      } else if ( target == flkty.getLastCell().target ) {
-        console.log('is at contained end')
-      }
-    });
-  </script>
   </body>
 </html>
