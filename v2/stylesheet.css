@@ -185,6 +185,14 @@ nav li{
   background-color: #F4D5D1;
 }
 
+#homepage .hero .grid-row{
+  padding-bottom: 1rem;
+}
+
+.hero .refugee-link{
+  margin-top: 4rem;
+}
+
 .partners{
   background-color: #faeeec;
 }
