@@ -44,6 +44,11 @@ h3{
 
 .large-text{
   font-size: 2rem;
+  line-height: 2.75rem;
+}
+
+.large-text span{
+  border-bottom: 7px solid #EAB0A8;
 }
 
 .medium-text{
@@ -85,7 +90,7 @@ h3{
 .grid-row {
   max-width: 64rem;
   margin: 0 auto;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   position: relative;
 }
 
@@ -337,8 +342,13 @@ nav li{
 /* Desktop styling */
 @media (min-width: 48rem) {
 
+  .button{
+    margin-top: 5rem;
+  }
+
   .large-text{
     font-size: 3.5rem;
+    line-height: 4.5rem;
   }
 
   .medium-text{
@@ -359,6 +369,7 @@ nav li{
   }
 
   .grid-row {
+    padding: 4rem 1rem;
     max-width: 64rem;
     display: flex;
     justify-content: space-between;
