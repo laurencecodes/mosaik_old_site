@@ -339,6 +339,32 @@ nav li{
   border-radius: 0 !important;
 }
 
+.profile .content, .profile img{
+  display: block;
+}
+
+.profile{
+  margin: 2rem 0;
+}
+
+.profile img{
+  width: 125px;
+  height: 125px;
+  border-radius: 75px;
+  vertical-align: top;
+  margin: .5rem 2rem 1rem 0;
+}
+
+.profile .content{
+  width: 100%;
+  margin-left: 0;
+}
+
+.profile h3{
+  margin-top: 0;
+}
+
+
 /* Desktop styling */
 @media (min-width: 48rem) {
 
@@ -394,6 +420,15 @@ nav li{
   .grid-row .column-one-fifth {
     width: 20%;
   }
+
+  .profile .content, .profile img{
+    display: inline-block;
+  }
+
+  .profile .content{
+    width: calc(100% - 130px - 2rem);
+  }
+
 }
 
 .step-nav__steps {
