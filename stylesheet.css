@@ -146,6 +146,11 @@ body {
 
 /* Sections */
 
+section{
+  /* Fix weird mobile bug */
+  padding: 1px 0;
+}
+
 .header{
   display: flow-root;
 }
