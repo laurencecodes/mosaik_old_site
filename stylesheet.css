@@ -199,6 +199,10 @@ nav li{
   padding-bottom: 1rem;
 }
 
+#how-we-work-page img{
+  margin-top: 1rem;
+}
+
 .hero .refugee-link{
   margin-top: 4rem;
 }
@@ -434,6 +438,10 @@ nav li{
     width: calc(100% - 130px - 2rem);
   }
 
+  #how-we-work-page img{
+    margin-top: 6rem;
+  }
+
 }
 
 .step-nav__steps {
@@ -547,8 +555,4 @@ body { font-family: sans-serif; }
 
 .main-gallery .card:first-child{
   margin-left: 0;
-}
-
-#how-we-work-page img{
-  margin-top: 6rem;
 }
