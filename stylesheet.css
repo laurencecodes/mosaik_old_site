@@ -556,3 +556,18 @@ body { font-family: sans-serif; }
 .main-gallery .card:first-child{
   margin-left: 0;
 }
+
+.logo-letter, .logo-word{
+  display: inline-block;
+  font-family: ginger;
+  font-size: 1.75rem;
+  margin-top: 10px;
+  margin-right: -4px;
+  margin-bottom: -5px;
+}
+
+.logo-type{
+  padding: 0 8px 0 5px;
+  border-bottom: 3px solid #EAB0A8;
+  display: inline-block;
+}
