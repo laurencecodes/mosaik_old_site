@@ -267,7 +267,7 @@ nav li{
   width: 16rem;
   margin: 1rem;
   color: #000;
-  min-height: 200px;
+  min-height: 250px;
 }
 
 .card div, .card ul {
@@ -572,12 +572,13 @@ body { font-family: sans-serif; }
 }
 
 .logo-type{
+  border-bottom: 3px solid #EAB0A8;
   margin-top: 1rem;
   display: inline-block;
   background-image: url("img/logo-03.png");
   background-position: center;
-  height: 65px;
   background-size: 168%;
+  padding: 0 8px 0 5px;
 }
 
 ul{
