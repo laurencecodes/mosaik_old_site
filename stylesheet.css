@@ -38,7 +38,7 @@ h2{
 }
 
 h3{
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 1rem 0;
   font-size: 1.25rem;
 }
 
@@ -267,7 +267,7 @@ nav li{
   width: 16rem;
   margin: 1rem;
   color: #000;
-  height: 160px;
+  min-height: 200px;
 }
 
 .card div, .card ul {
@@ -337,6 +337,11 @@ nav li{
 .footer {
   background-color: #000;
   color: #fff;
+}
+
+.footer a{
+  color: #fff;
+  text-decoration: underline;
 }
 
 .footer p.subfooter {
@@ -567,7 +572,29 @@ body { font-family: sans-serif; }
 }
 
 .logo-type{
-  padding: 0 8px 0 5px;
-  border-bottom: 3px solid #EAB0A8;
+  margin-top: 1rem;
   display: inline-block;
+  background-image: url("img/logo-03.png");
+  background-position: center;
+  height: 65px;
+  background-size: 168%;
+}
+
+ul{
+  padding-left: 20px;
+  list-style-position: outside;
+}
+
+ul.no-bullet{
+  list-style-type: none;
+  padding: 0;
+}
+
+li{
+  margin-bottom: 5px;
+}
+
+em{
+  display: block;
+  margin: 1rem 0;
 }
