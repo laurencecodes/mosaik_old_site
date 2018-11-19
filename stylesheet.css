@@ -59,6 +59,17 @@ h3{
   font-family: "Ginger", sans-serif;
 }
 
+input[type="submit"].paypal_button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  margin-top: 0;
+}
+
 .button{
   padding: 10px 15px;
   margin-top: 2rem;
@@ -73,14 +84,14 @@ h3{
   transition: background-color 0.5s ease;
 }
 
-.link{
+.link, input[type="submit"].paypal_button{
   color: #333b8c !important;
   margin-bottom: 2px;
   font-size: 1rem;
   font-weight: 900;
   border-bottom: 2px solid #2C578F;
 }
-.link:hover{
+.link:hover, input[type="submit"].paypal_button:hover{
   border-bottom: 3px solid #2C578F;
   margin-bottom: 1px;
 }
