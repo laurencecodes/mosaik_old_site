@@ -62,19 +62,19 @@ h3{
 .button{
   padding: 10px 15px;
   margin-top: 2rem;
-  background: #2C578F;
+  background: #333b8c;
   color: #fff !important;
   border-radius: 5px;
   font-weight: bold;
   display: inline-block;
 }
 .button:hover{
-  background: #678AB7;
+  background: #4b5ba5;
   transition: background-color 0.5s ease;
 }
 
 .link{
-  color: #2C578F !important;
+  color: #333b8c !important;
   margin-bottom: 2px;
   font-size: 1rem;
   font-weight: 900;
@@ -221,7 +221,7 @@ nav li{
 }
 
 .journey{
-  background-color: #465B76;
+  background-color: #333b8c;
   color: #fff;
 }
 
@@ -473,7 +473,7 @@ nav li{
 }
 
 .step-nav__header {
-    border-top: solid 1px #6B7C91;
+    border-top: solid 1px #4b5ba5;
 }
 
 .step-nav__steps:first-child .step-nav__header {
@@ -497,7 +497,7 @@ nav li{
     width: 26px;
     height: 26px;
     color: #F4D5D1;
-    background: #465B76;
+    background: #333b8c;
     border-radius: 100px;
     text-align: center;
 }

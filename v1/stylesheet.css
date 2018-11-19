@@ -150,7 +150,7 @@ nav li{
 }
 
 .introduction, .values {
-  /* background-color: #465B76; */
+  /* background-color: #4b5ba5; */
   /* color: #fff; */
 }
 .hero .medium-text{
@@ -159,7 +159,7 @@ nav li{
 }
 
 .our-work{
-  background-color: #465B76;
+  background-color: #4b5ba5;
 }
 .our-work .display{
   color: #2C578F;
@@ -169,7 +169,7 @@ nav li{
   bottom: 2rem;
 }
 .support {
-  background-color: #465B76;
+  background-color: #4b5ba5;
   color: #fff;
 }
 .values .grid-row:first-of-type{
