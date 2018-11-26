@@ -471,14 +471,14 @@ nav li{
 
   .how-we-work img{
     display: block;
-    width: 225px;
+    width: 200px;
     position: absolute;
     right: 10px;
-    bottom: 10px;
+    bottom: 25px;
   }
 
   .how-we-work img.last{
-    top: 35px;
+    top: 50px;
   }
   .how-we-work h3{
     margin-top: 0;
