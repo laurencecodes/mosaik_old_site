@@ -206,6 +206,10 @@ nav li{
   padding-top: 70px;
 }
 
+.hero span{
+  border-bottom: 8px solid #EAB0A8;
+}
+
 #homepage .hero .grid-row{
   padding-bottom: 1rem;
 }
