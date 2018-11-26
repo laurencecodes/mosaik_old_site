@@ -263,7 +263,6 @@ nav li{
   display: none;
 }
 
-
 .support{
   background-color: #F4D5D1;
 }
@@ -471,7 +470,14 @@ nav li{
     width: 225px;
     position: absolute;
     right: 10px;
-    bottom: 25px;
+    bottom: 10px;
+  }
+
+  .how-we-work img.last{
+    top: 35px;
+  }
+  .how-we-work h3{
+    margin-top: 0;
   }
 
 
