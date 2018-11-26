@@ -207,7 +207,7 @@ nav li{
 }
 
 .hero span{
-  border-bottom: 8px solid #EAB0A8;
+  border-bottom: 5px solid #EAB0A8;
 }
 
 #homepage .hero .grid-row{
@@ -467,6 +467,10 @@ nav li{
 
   .profile .content, .profile img{
     display: inline-block;
+  }
+
+  .hero span{
+    border-bottom: 8px solid #EAB0A8;
   }
 
   .how-we-work img{
