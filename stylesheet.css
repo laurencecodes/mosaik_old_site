@@ -64,6 +64,7 @@ input[type="submit"].paypal_button {
 	cursor: pointer;
 	outline: inherit;
   margin-top: 0;
+  vertical-align: top;
 }
 
 .button{
@@ -200,8 +201,9 @@ nav li{
 }
 
 .hero{
-  background-image: url("img/texture.png");
+  background-image: url("img/bg.png");
   background-size: cover;
+
   margin-top: -70px;
   padding-top: 70px;
 }
@@ -238,8 +240,7 @@ nav li{
 .journey{
   background-color: #333b8c;
   color: #fff;
-  background-image: url("img/texture-2.png");
-  background-size: cover;
+  background-image: url("img/bg2.png");
 }
 
 .journey h2, .journey h3{
