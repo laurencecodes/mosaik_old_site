@@ -54,6 +54,8 @@ h3{
 
 .display{
   font-family: "Ginger", sans-serif;
+  font-size: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 input[type="submit"].paypal_button {
