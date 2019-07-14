@@ -72,6 +72,16 @@ body {
   padding: 0;
   margin-bottom: -2em;
 }
+.divider{
+  border-bottom: 1px solid #F4D5D1;
+  max-width: 64rem;
+  margin: auto
+}
+
+.backers .grid-row .column-one-third {
+  width: 33.33%;
+  display: inline-block;
+}
 
 /* Desktop styling */
 @media (min-width: 48rem) {
@@ -84,7 +94,7 @@ body {
     padding: 4rem 0;
     max-width: 64rem;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .grid-row .column-one-whole{
@@ -96,6 +106,7 @@ body {
   }
 
   .grid-row .column-one-third {
+    flex-grow: 2;
     width: 33.33%;
   }
 
@@ -109,13 +120,10 @@ body {
 
   .column-one-whole, .column-one-half, .column-one-third, .column-two-thirds, .column-one-fifth {
     padding: 0 1rem;
+    box-sizing: border-box;
   }
 
-  .divider{
-    border-bottom: 1px solid #F4D5D1;
-    max-width: 64rem;
-    margin: auto
-  }
+
 
 }
 
@@ -166,7 +174,11 @@ p.centred{
   margin-bottom: 2px;
   font-size: 1rem;
   font-weight: 900;
+  border: none;
   border-bottom: 2px solid #2C578F;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
 }
 .link:hover, input[type="submit"].paypal_button:hover{
   border-bottom: 3px solid #2C578F;
@@ -298,13 +310,35 @@ header .grid-row{
   padding: 0 0 0 1rem;
 }
 
+header img{
+  width: 25px;
+  margin-top: 0;
+}
+
+ul.pages{
+  display: none;
+}
+
+ul.social{
+  margin-left: 25px;
+}
+
+ul.social img{
+  position: relative;
+  top: -12px;
+}
+
 section{
   /* Fix weird mobile bug */
   padding: 1px 0;
 }
 
-nav{
+header nav{
   float: right;
+}
+
+
+nav{
   margin-top: .75rem;
 }
 
@@ -341,10 +375,6 @@ header, .hero {
   margin-top: 2rem;
 }
 
-.what-we-do{
-  color: #2C578F;
-}
-
 .what-we-do .column-one-third{
   margin-top: 2.5rem;
 }
@@ -359,10 +389,19 @@ header, .hero {
 
 .support h2{
   font-size: 1.25rem;
+  margin-top: 0;
 }
 
 /* Desktop styling */
 @media (min-width: 48rem) {
+
+  ul.pages, ul.social{
+    display: inline;
+  }
+  ul.social img{
+    position: relative;
+    top: 5px;
+  }
   .support{
     text-align: left;
   }
@@ -374,8 +413,7 @@ header, .hero {
   .hero{
     margin-top: -70px;
     padding-top: 100px;
-    /* padding-bottom: 50px; */
-    min-height: 400px;
+    min-height: 300px;
   }
 
   .hero .refugee-link{
@@ -398,6 +436,7 @@ header, .hero {
   }
 
   header .grid-row{
+    display: block;
     padding: 0 0 0 1rem;
   }
 
@@ -414,6 +453,7 @@ header, .hero {
 
 .card {
   flex-direction: column;
+  height: 96%;
   min-height: 250px;
   margin: 1rem;
   border-radius: 5px;
@@ -427,6 +467,7 @@ header, .hero {
   margin-bottom: 1rem;
   border-radius: 5px 5px 0px 0px;
   overflow: hidden;
+  /* height: 200px; */
 }
 
 .image img{
