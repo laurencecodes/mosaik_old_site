@@ -187,11 +187,11 @@ p.centred{
 }
 .link:hover, input[type="submit"].paypal_button:hover{
   border-bottom: 3px solid #2C578F;
-  margin-bottom: 1px;
+  margin-bottom: 24px;
 }
 
 input[type="submit"].paypal_button{
-  margin-bottom: 2rem;
+  margin-bottom: 25px;
 }
 
 .centred{
