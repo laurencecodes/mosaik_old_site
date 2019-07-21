@@ -79,7 +79,7 @@ body {
 }
 
 .backers .grid-row .column-one-third {
-  width: 33.33%;
+  width: 50%;
   display: inline-block;
 }
 
@@ -123,6 +123,10 @@ body {
     box-sizing: border-box;
   }
 
+  .backers .grid-row .column-one-third {
+    width: 33.33%;
+    display: inline-block;
+  }
 
 
 }
