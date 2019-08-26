@@ -350,22 +350,8 @@ header .grid-row{
   padding: 0 0 0 1rem;
 }
 
-header img{
-  width: 25px;
-  margin-top: 0;
-}
-
 ul.pages{
   display: none;
-}
-
-ul.social{
-  margin-left: 25px;
-}
-
-ul.social img{
-  position: relative;
-  top: -12px;
 }
 
 section{
@@ -378,7 +364,6 @@ header nav{
   margin-top: 25px;
 }
 
-
 nav{
   margin-top: .75rem;
 }
@@ -386,6 +371,7 @@ nav{
 nav ul{
   list-style-type: none;
   padding: 0;
+  margin-left: 1rem;
 }
 
 nav li{
@@ -396,6 +382,10 @@ nav li{
 
 header, .hero {
   background-color: #F4D5D1;
+}
+
+header nav{
+  display: none;
 }
 
 .hero{
@@ -436,12 +426,14 @@ header, .hero {
 /* Desktop styling */
 @media (min-width: 48rem) {
 
+
   ul.pages, ul.social{
     display: inline;
   }
-  ul.social img{
+  header ul.social img{
     position: relative;
     top: 5px;
+    width: 20px;
   }
   .support{
     text-align: left;
@@ -483,6 +475,10 @@ header, .hero {
 
   header{
     padding-bottom: 25px;
+  }
+
+  header nav{
+    display: block;
   }
 
   .how-we-work img{
@@ -532,48 +528,8 @@ header, .hero {
   padding: 0 1rem .5rem 1rem;
 }
 
-/* .components {
-  margin-top: auto;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  padding-bottom: 0.25rem;
-}
-.components li {
-  border-top: 1px solid #eee;
-  width: 100%;
-  padding: 0.3rem 0;
-  display:flex;
-  align-content: center;
-}
-.components li a {
-  padding: 0.5rem 0;
-  line-height: 1.2;
-  width: 100%;
-  display:flex;
-  justify-content:flex-start;
-  align-items: center;
-  color: #333;
-}
-.components li a:hover, .components li a:focus {
-  background-color: white;
-  text-decoration:underline;
-}
-.components li a span.icon {
-  margin-right: 0.3rem;
-  height: 1.5rem;
-  width: 1.5rem;
-  background-position: top center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.icon.chevron {height: 0.75rem !important;width: 0.75rem !important; background-image:url('img/icons/chevron.svg');margin-left: auto;} */
-
-/* Desktop styling */
-@media (min-width: 48rem) {
-
+footer nav{
+  margin-bottom: 4rem;
 }
 
 footer {
@@ -602,9 +558,35 @@ footer li{
   display: block;
 }
 
+footer img, header img{
+  width: 25px;
+  margin-top: 0;
+}
+
+ul.social li{
+  display: inline-block;
+  margin-right: 1rem;
+  float: right;
+}
+
 footer p.subfooter {
   font-size: 1rem;
   opacity: 0.7;
+}
+
+footer ul.links, footer ul.social{
+  width: 50%;
+  display: inline-block;
+}
+
+footer .column-two-thirds{
+  position: relative;
+}
+
+footer ul.social{
+  vertical-align: top;
+  position: absolute;
+  right: 0;
 }
 
 .profile{
@@ -622,4 +604,11 @@ footer p.subfooter {
 .profile .content{
   width: 100%;
   margin-left: 0;
+}
+
+/* Desktop styling */
+@media (min-width: 48rem) {
+  footer ul.social li{
+    float: left;
+  }
 }
