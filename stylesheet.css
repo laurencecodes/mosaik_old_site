@@ -1,13 +1,27 @@
 @font-face {
-    font-family: 'Ginger';
-    src: url('fonts/f37ginger-bold-webfont.eot');
-    src: url('fonts/f37ginger-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/f37ginger-bold-webfont.woff') format('woff'),
-         url('fonts/f37ginger-bold-webfont.ttf') format('truetype'),
-         url('fonts/f37ginger-bold-webfont.svg#f37_gingerbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'F37 Ginger';
+  src: url('fonts/F37Ginger-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/F37Ginger-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/F37Ginger-Bold.woff') format('woff'), /* Modern Browsers */
+       url('fonts/F37Ginger-Bold.woff2') format('woff2'), /* Modern Browsers */
+       url('fonts/F37Ginger-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/F37Ginger-Bold.svg#7db0a735880422cc5fa2f936a390d651') format('svg'); /* Legacy iOS */
 
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'F37 Ginger';
+  src: url('fonts/F37Ginger-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/F37Ginger-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/F37Ginger-Regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/F37Ginger-Regular.woff2') format('woff2'), /* Modern Browsers */
+       url('fonts/F37Ginger-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/F37Ginger-Regular.svg#cd0eb1181545a540be3acd13cd87c831') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
 }
 
 * {
@@ -18,10 +32,11 @@
 html, body {
   /* System Fonts as used by GitHub */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5;
   background-color: snow;
   scroll-behavior: smooth;
+  box-sizing: border-box;
   /* direction: rtl; */
 }
 
@@ -73,14 +88,27 @@ body {
   margin-bottom: -2em;
 }
 .divider{
-  border-bottom: 1px solid #F4D5D1;
-  max-width: 64rem;
-  margin: auto
+  margin-top: -3px;
+  height: 3px;
+  border-radius: 10px;
+  box-shadow: 0 5px 0 0 #F4D5D1;
+  font-family: sans-serif;
 }
 
 .backers .grid-row .column-one-third {
   width: 50%;
   display: inline-block;
+}
+.uel, .osf{
+  float: left;
+}
+.uk-aid{
+  margin: auto;
+  display: block !important;
+}
+
+.grid-row.no-padding{
+  padding: 0 1rem !important;
 }
 
 /* Desktop styling */
@@ -91,7 +119,7 @@ body {
   }
 
   .grid-row {
-    padding: 4rem 0;
+    padding: 5rem 0;
     max-width: 64rem;
     display: flex;
     flex-wrap: wrap;
@@ -128,14 +156,17 @@ body {
     display: inline-block;
   }
 
-
 }
 
 /* TYPOGRAPHY */
 
 h1, h2, h3, h4, h5, b {
-  font-weight: normal;
-  font-family: "Ginger";
+  font-weight: 700;
+  font-family: "F37 Ginger";
+}
+
+h1, h2{
+  text-align: center;
 }
 
 h1{
@@ -165,6 +196,7 @@ p {
 
 .medium-text{
   font-size: 1.25rem;
+  font-family: "F37 Ginger";
 }
 
 .small-text{
@@ -210,16 +242,35 @@ a:hover, a:active, a:focus {
   color: black;
 }
 
-.logo{
-  font-weight: bold;
-  font-family: "Ginger";
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
+.donate-button-container{
+  display: flex;
+  align-items: center;
+}
+
+a.donate-button{
+  margin: 2rem 0 1rem 0;
+  display: inline-block;
+  border: 3px solid #343D8A;
+  border-radius: 3px;
+  font-family: "F37 Ginger";
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: .75rem;
+  width: 100%;
+  color: #343D8A;
+  text-align: center;
+  transition: box-shadow .5s;
+}
+
+a.donate-button:hover{
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.25);
 }
 
 .logo-word{
   display: inline-block;
-  font-family: ginger;
+  font-family: "F37 Ginger";
+  font-weight: 700;
   font-size: 1.75rem;
   margin: 10px -4px -5px 0;
 }
@@ -344,10 +395,13 @@ nav{
 
 header{
   display: flow-root;
+  background-color: #F4D5D1;
+  position: relative;
+  text-align: center;
 }
 
 header .grid-row{
-  padding: 0 0 0 1rem;
+  padding: 0 0 1.25rem 0;
 }
 
 ul.pages{
@@ -389,8 +443,16 @@ header nav{
 }
 
 .hero{
-  margin-top: -50px;
-  padding-top: 50px;
+  padding-top: 30px;
+  background-image: url("img/hero/Roula_Jana.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero .large-text{
+  text-shadow: 0px 0px 9px rgba(0,0,0,0.5);
+  text-align: center;
 }
 
 .hero .refugee-link{
@@ -398,7 +460,8 @@ header nav{
 }
 
 .hero .grid-row{
-  padding-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero .medium-text{
@@ -408,25 +471,26 @@ header nav{
 
 .what-we-do .column-one-third{
   margin-top: 2.5rem;
+  font-weight: 400;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .what-we-do .column-one-third:first-child{
   margin-top: 0;
 }
 
+.learn-more{
+  padding-top: 0;
+}
+
 .support{
   text-align: center;
 }
 
-.support h2{
-  font-size: 1.25rem;
-  margin-top: 0;
-}
 
 /* Desktop styling */
 @media (min-width: 48rem) {
-
-
   ul.pages, ul.social{
     display: inline;
   }
@@ -435,18 +499,10 @@ header nav{
     top: 5px;
     width: 20px;
   }
-  .support{
-    text-align: left;
-  }
 
-  .support h2{
-    font-size: 2rem;
-  }
-
-  .hero{
-    margin-top: -70px;
-    padding-top: 100px;
-    min-height: 300px;
+  .hero .grid-row{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 
   .hero .refugee-link{
@@ -464,17 +520,13 @@ header nav{
     margin-top: 0;
   }
 
-  .case-studies .centred.learn-more{
-    padding-top: 0;
-  }
-
   header .grid-row{
     display: block;
-    padding: 0 0 0 1rem;
+    padding: 0 0 1.25rem 1rem;
   }
 
   header{
-    padding-bottom: 25px;
+    text-align: left;
   }
 
   header nav{
