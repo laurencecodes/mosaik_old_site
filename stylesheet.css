@@ -344,6 +344,50 @@ li{
   margin-bottom: 5px;
 }
 
+.tiers span{
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "F37 Ginger"
+}
+
+.tiers, .pull-out{
+  text-align: center;
+}
+
+.tier{
+  margin-bottom: 2rem;
+}
+
+.graphic{
+  position: relative;
+  padding: 0 !important;
+}
+
+.graphic img{
+  margin: 0;
+}
+
+.paypal-link{
+  display: inline-block;
+  margin: 1rem 0 2rem 0;
+  color: #fff;
+  background-color: #1072B8;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.paypal-link:hover{
+  background: #012169;
+  color: #fff;
+}
+
+.paypal-link:visited{
+  color: #fff;
+}
+
 /* Desktop styling */
 @media (min-width: 48rem) {
   .large-text{
@@ -354,6 +398,17 @@ li{
   .medium-text{
     font-size: 1.5rem;
   }
+
+  .grid-row.cost-breakdown{
+    display: block;
+  }
+
+  .graphic{
+    position: absolute;
+    right: 0;
+    top: 5rem;
+  }
+
 }
 
 /* BUTTONS */
