@@ -32,7 +32,7 @@
 html, body {
   /* System Fonts as used by GitHub */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.5;
   background-color: snow;
   scroll-behavior: smooth;
@@ -109,6 +109,14 @@ body {
 
 .grid-row.no-padding{
   padding: 0 1rem !important;
+}
+
+.grid-row.no-padding-bottom{
+  padding-bottom: 1rem !important;
+}
+
+.grid-row.no-padding-top{
+  padding-top: 0rem !important;
 }
 
 /* Desktop styling */
@@ -195,7 +203,7 @@ p {
 }
 
 .medium-text{
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-family: "F37 Ginger";
 }
 
@@ -242,7 +250,7 @@ a:hover, a:active, a:focus {
   color: black;
 }
 
-.donate-button-container{
+.vertical-align{
   display: flex;
   align-items: center;
 }
@@ -367,6 +375,21 @@ li{
   margin: 0;
 }
 
+.quote-wrap{
+  background-color: #fff;
+  color: #343D8A;
+  padding: 2rem .75rem;
+}
+
+.quote-wrap img{
+  margin: 0;
+}
+
+.quote{
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
 .paypal-link{
   display: inline-block;
   margin: 1rem 0 2rem 0;
@@ -407,6 +430,10 @@ li{
     position: absolute;
     right: 0;
     top: 5rem;
+  }
+  .graphic img{
+    width: 85%;
+    margin: auto;
   }
 
 }
@@ -505,9 +532,22 @@ header nav{
   color: #fff;
 }
 
+.hero.what-we-do{
+  background-image: url("img/hero/what-we-do.jpg");
+}
+
+.hero.donate{
+  background-image: url("img/hero/donate-2.jpg");
+  text-align: left;
+}
+
 .hero .large-text{
-  text-shadow: 0px 0px 9px rgba(0,0,0,0.5);
+  text-shadow: 0px 0px 9px rgba(0,0,0,0.3);
   text-align: center;
+}
+
+.hero.donate h1{
+  text-shadow: 0px 0px 9px rgba(0,0,0,0.5);
 }
 
 .hero .refugee-link{
@@ -562,6 +602,12 @@ header nav{
 
   .hero .refugee-link{
     margin-top: 8rem;
+  }
+
+  .hero.donate h1{
+    text-align: left;
+    text-shadow: none;
+    color: #000;
   }
 
   .how-we-work img.last{
