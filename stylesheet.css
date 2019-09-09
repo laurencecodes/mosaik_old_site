@@ -433,13 +433,12 @@ li{
   width: 200px;
   height: 200px;
   box-sizing: border-box;
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
 
 .key {
-  width: 55%;
-  position: absolute;
-  left: 40%;
+  width: 225px;
+  margin: 0 auto 2rem auto;
   top: 2rem;;
   list-style: none;
   font-family: "F37 Ginger"
@@ -507,6 +506,16 @@ li{
     position: absolute;
     right: 0;
     top: 4rem;
+  }
+
+  .chart {
+    margin: 2rem 0;
+  }
+
+  .key {
+    position: absolute;
+    left: 40%;
+    top: 3rem;
   }
 
 }
