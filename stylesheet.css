@@ -437,9 +437,9 @@ li{
 }
 
 .key {
-  width: 50%;
+  width: 55%;
   position: absolute;
-  left: 45%;
+  left: 40%;
   top: 2rem;;
   list-style: none;
   font-family: "F37 Ginger"
