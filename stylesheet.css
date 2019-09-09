@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, b {
   font-family: "F37 Ginger";
 }
 
-h1, h2{
+.campaign h1, .campaign h2{
   text-align: center;
 }
 
@@ -281,6 +281,7 @@ a.donate-button{
   color: #343D8A;
   text-align: center;
   transition: ease .5s;
+  box-sizing: border-box;
 }
 
 a.donate-button:hover{
@@ -429,11 +430,42 @@ li{
     conic-gradient(#F4D5D1 0 10%, #343D8A 0 90%
     );
   border-radius: 50%;
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 200px;
   box-sizing: border-box;
-  margin: 1rem auto 1rem auto;
+  margin: 2rem 0;
 }
+
+.key {
+  width: 50%;
+  position: absolute;
+  left: 45%;
+  top: 2rem;;
+  list-style: none;
+  font-family: "F37 Ginger"
+}
+
+.key li{
+  margin-bottom: 25px;
+}
+.percent {
+  color: white;
+  padding: .25rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.choice {
+  padding-left: 10px;
+}
+
+.blue {
+  background: #343D8A;
+}
+.pink {
+  background: #F4D5D1;
+  color: #343D8A;
+}
+
 
 .paypal-link{
   display: inline-block;
@@ -475,10 +507,6 @@ li{
     position: absolute;
     right: 0;
     top: 4rem;
-  }
-
-  .chart {
-    margin: 1rem 0 2rem 0;
   }
 
 }
