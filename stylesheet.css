@@ -206,6 +206,13 @@ h3{
   color: #222;
 }
 
+label{
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
 p {
   /* max-width: 600px; */
 }
@@ -268,7 +275,7 @@ a:hover, a:active, a:focus {
   align-items: center;
 }
 
-a.donate-button{
+a.donate-button, input.donate-button{
   margin: 2rem 0 1rem 0;
   display: inline-block;
   border: 3px solid #343D8A;
@@ -279,15 +286,25 @@ a.donate-button{
   padding: .75rem;
   width: 100%;
   color: #343D8A;
+  background-color: transparent;
   text-align: center;
   transition: ease .5s;
   box-sizing: border-box;
 }
 
-a.donate-button:hover{
+a.donate-button:hover, input.donate-button:hover{
   background-color: #fff;
   box-shadow: 0 1rem 2rem rgba(0,0,0,0.25);
   cursor: pointer;
+}
+
+input[type=email]{
+  padding: 15px;
+  border: 2px solid #343D8A;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border-radius: 3px;
 }
 
 header .donate-button{
