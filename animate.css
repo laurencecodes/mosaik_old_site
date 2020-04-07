@@ -573,7 +573,7 @@
 
 @-webkit-keyframes jello {
   from,
-  11.1%,
+  11.3%,
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -617,7 +617,7 @@
 
 @keyframes jello {
   from,
-  11.1%,
+  11.3%,
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
